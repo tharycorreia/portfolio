@@ -1,0 +1,191 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.inicio {
+    background-color: #c67a7a;
+    height: 100vh;
+    background-attachment: fixed;
+    color: white;
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+}
+
+#sobre {
+    background-color: #c67a7a;
+    color: #202531;
+}
+
+.card {
+    border: solid;
+}
+
+#projetos {
+    background-color: #c67a7a;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+#contato {
+    background-color: #222;
+    color: #fff;
+    border-top: solid 5px;
+}
+
+#formacao {
+    background-color: #c67a7a;
+
+    color: #202531;
+}
+
+#exp-profissionais {
+    background-color: #222;
+}
+
+.title {
+    font-size: 8rem;
+}
+
+
+.sub-title {
+    color: #fff;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 4px #c67a7a;
+}
+
+.shadow-sub {
+    text-shadow: 2px 2px 4px #222;
+}
+
+.git-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.git-link:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+p {
+    text-align: justify;
+}
+
+.menu {
+    margin: 3% 0% 0% -5%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item-menu {
+    margin-left: 3%;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.2REM;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.item-rodape {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.botao-curriculo:hover {
+    color: #c67a7a;
+
+}
+
+.item-rodape:hover,
+.item-menu:hover {
+    text-decoration: none;
+    color: #c67a7a;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo-principal {
+    font-weight: 300;
+    font-size: 9rem;
+    margin: 0;
+}
+
+.subtitulo {
+    margin-top: -0.5%;
+    display: flex;
+    font-weight: 200;
+    letter-spacing: 0.74rem;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .titulo-principal {
+        font-size: 7rem;
+    }
+
+    .subtitulo {
+        font-size: 1.28rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .menu {
+        display: none;
+    }
+
+    .titulo-principal {
+        font-size: 4rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .titulo-principal {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 0.85rem;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .sub-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .sub-title {
+        font-size: 1.2rem;
+    }
+}
+
+.card-data {
+    background-color: #c67a7a;
+}
