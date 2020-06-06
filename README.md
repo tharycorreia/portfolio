@@ -1,4 +1,6 @@
-# portfolio
+
 Versão 2 portfólio Thary
 
-www.tharycorreia.com
+Utilizado JavaScript, Css, Html e Bootstrap.
+
+Disponível para visualização em www.tharycorreia.com
