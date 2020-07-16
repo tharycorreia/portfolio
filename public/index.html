@@ -129,6 +129,32 @@
           'btn-veja-menos-ciasc').style.display =
         'none' : document.getElementById('btn-veja-menos-ciasc').style.display = 'block'
     }
+
+    function mostrarByne() {
+      document.getElementById('byne').style.display == 'block' ? document.getElementById('ciasc').style.display =
+        'none' : document.getElementById('byne').style.display = 'block'
+
+      document.getElementById('btn-veja-mais-byne').style.display == 'none' ? document.getElementById(
+          'btn-veja-mais-byne').style.display =
+        'block' : document.getElementById('btn-veja-mais-byne').style.display = 'none'
+
+      document.getElementById('btn-veja-menos-byne').style.display == 'block' ? document.getElementById(
+          'btn-veja-menos-byne').style.display =
+        'none' : document.getElementById('btn-veja-menos-byne').style.display = 'block'
+    }
+
+    function mostrarVpo() {
+      document.getElementById('vpo').style.display == 'block' ? document.getElementById('ciasc').style.display =
+        'none' : document.getElementById('vpo').style.display = 'block'
+
+      document.getElementById('btn-veja-mais-vpo').style.display == 'none' ? document.getElementById(
+          'btn-veja-mais-vpo').style.display =
+        'block' : document.getElementById('btn-veja-mais-vpo').style.display = 'none'
+
+      document.getElementById('btn-veja-menos-vpo').style.display == 'block' ? document.getElementById(
+          'btn-veja-menos-vpo').style.display =
+        'none' : document.getElementById('btn-veja-menos-vpo').style.display = 'block'
+    }
   </script>
 </head>
 
@@ -146,11 +172,9 @@
         <h2 class='subtitulo'>FRONT-END DEVELOPER</h2>
       </div>
     </div>
-
   </div>
   <div id="sobre">
     <div class="container">
-
       <div class="row pt-4">
         <div class="col-md-4 pt-4 pb-5">
           <img class="rounded float-left img-fluid" src="./img/pp (1).jpeg" alt="Thary">
@@ -160,13 +184,10 @@
             <h2 class="sub-title shadow-sub">SOBRE MIM</h2>
           </div>
           <p>
-            Oi, tudo bom?
-          </p>
-          <p>
-            Espero que sim! Bom, sou a Thary e sou desenvolvedora Front-End. Possuo nível técnico em informática com
-            foco em programação Java pelo Senai-SC e estou finalizando o curso de Sistemas de Informação pela
+            Desenvolvedora Front-End, com nível técnico em informática com
+            foco em programação Java pelo Senai-SC e finalizando o curso de Sistemas de Informação pela
             Universidade Federal de Santa Catarina. </p>
-          <p> Aprender a programar foi um dos maiores desafios que tive e hoje é algo que amo fazer. Atualmente meu
+          <p> Aprender a programar foi um grande desafios e hoje é algo que amo fazer. Atualmente meu
             foco
             é em desenvolvimento Web e com isso busco me especializar em tecnologias como JavaScript, Html, Css,
             ReactJs, Redux e Node.
@@ -293,10 +314,6 @@
                     </container>
                   </container>
                 </li>
-
-
-
-
               </ul>
             </div>
           </div>
@@ -368,7 +385,47 @@
         <h2 class="sub-title p-4">Experiências profissionais</h2>
       </div>
       <div class="row">
-
+        <div class="col-md-6">
+          <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarByne()'>
+            <h6 class="card-data p-1 d-flex justify-content-center text-white">Julho/2020 - Atualmente</h6>
+            <h4 class="d-flex justify-content-center">Byne - Tecnologia de Comunicação</h4>
+            <div id="btn-veja-mais-byne" class="mostrar">
+              <div class="d-flex justify-content-center mt-2 ">
+                <button class="btn btn-sm">Mais detalhes</button>
+              </div>
+            </div>
+            <div id='byne' class="ocultar p-4">
+              <p>- Front-End Developer</p>
+              <p>- ReactJs, Redux</p>
+            </div>
+            <div id="btn-veja-menos-vpo" class="ocultar">
+              <div class="d-flex justify-content-center mt-2 ">
+                <button class="btn btn-sm">Ocultar detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarVpo()'>
+            <h6 class="card-data p-1 d-flex justify-content-center text-white">Junho/2020 - Atualmente</h6>
+            <h4 class="d-flex justify-content-center">VpO - Vâmo pra Onde?</h4>
+            <div id="btn-veja-mais-vpo" class="mostrar">
+              <div class="d-flex justify-content-center mt-2 ">
+                <button class="btn btn-sm">Mais detalhes</button>
+              </div>
+            </div>
+            <div id='freeem' class="ocultar p-4">
+              <p>- Ui/Ux Design</p>
+              <p>- Protoripação, definição de fluxo</p>
+              <p>- Figma</p>
+            </div>
+            <div id="btn-veja-menos-vpo" class="ocultar">
+              <div class="d-flex justify-content-center mt-2 ">
+                <button class="btn btn-sm">Ocultar detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6">
           <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarFreeem()'>
             <h6 class="card-data p-1 d-flex justify-content-center text-white">Abril/2020 - Atualmente</h6>
@@ -458,7 +515,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+       <!-- <div class="col-md-6">
           <div class="card mb-3 pt-3 pr-3 pl-3 pb-1" onClick='mostrarSaas()'>
             <h6 class="card-data p-1 d-flex justify-content-center text-white">Janeiro/2018 - Agosto/2018</h6>
             <h4 class="d-flex justify-content-center">Laboratório E-Tec - SAAS</h4>
@@ -555,7 +612,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
       <div class="d-flex justify-content-center mt-4">
         <button class="btn btn-outline-light">
@@ -585,8 +642,8 @@
           </a>
         </div>
         <div class="col-md-4  p-2">
-          <a href="https://github.com/tharycorreia/portfolio-thary" class='zoom' target="blank">
-            <img class="rounded img-fluid" src="./img/1.png" alt="Portfólio V1 - Thary">
+          <a href="https://julianaalecio.com/" class='zoom' target="blank">
+            <img class="rounded img-fluid" src="./img/siteju.png" alt="Juliana Alécio - Coaching e Inovação">
           </a>
         </div>
       </div>
